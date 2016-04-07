@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=1">
+    <title>Quizz de personnalité</title>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Quel métier est fait pour toi ?</h1>
+        <h2>Tu pourrais être surpris ...</h2>
+    </header>
+    <section>
+        <div id="quizz-container" class="container-fluid bg-info">
+            <div class="box">
+                <h3 class="box"><span class="label label-warning" id="qid">Question 1</span> Les prochaines vacances, tu les
+                    préférerais :</h3>
+            </div>
+            <div class="col-xs-3 col-xs-offset-5">
+                <div id="loadbar" style="display: none;">
+                    <div class="blockG" id="rotateG_01"></div>
+                    <div class="blockG" id="rotateG_02"></div>
+                    <div class="blockG" id="rotateG_03"></div>
+                    <div class="blockG" id="rotateG_04"></div>
+                    <div class="blockG" id="rotateG_05"></div>
+                    <div class="blockG" id="rotateG_06"></div>
+                    <div class="blockG" id="rotateG_07"></div>
+                    <div class="blockG" id="rotateG_08"></div>
+                </div>
+            </div>
+
+            <div class="quiz" id="quiz" data-toggle="buttons">
+                <label class="element-animation1 btn btn-lg btn-block"><span class="btn-label"><i
+                        class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer"
+                                                                                     value="1">Au milieu de la
+                    jungle</label>
+                <label class="element-animation2 btn btn-lg btn-block"><span class="btn-label"><i
+                        class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer"
+                                                                                     value="2">A la montagne</label>
+                <label class="element-animation3 btn btn-lg btn-block"><span class="btn-label"><i
+                        class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer"
+                                                                                     value="3">Dans mon canap</label>
+                <label class="element-animation4 btn btn-lg btn-block"><span class="btn-label"><i
+                        class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer"
+                                                                                     value="4">A la mer</label>
+            </div>
+            <div class="box text-muted">
+                <span id="answer"></span>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="App/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="App/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
